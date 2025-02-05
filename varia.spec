@@ -16,6 +16,7 @@ BuildRequires: desktop-file-utils
 BuildRequires: meson
 BuildRequires: fdupes
 BuildRequires: filesystem
+BuildRequires: gettext
 Requires: python3
 Requires: python3-gobject
 Requires: python3-requests
