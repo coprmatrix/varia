@@ -1,6 +1,6 @@
 Name:           varia
 Version:        2024.5.7
-Release:        0
+Release:        1%{?autorelease}
 Summary:        Download manager based on aria2
 License:        MPL-2.0
 Group:          System/GUI/GNOME
@@ -11,7 +11,7 @@ BuildArch: noarch
 
 %define typelib() (typelib(%1) = %2 or %{_libdir}/girepository-1.0/%1-%2.typelib)
 
-BuildRequires: (gtk2-tools or gtk3-tools or gtk4-tools or gtk5-tools)
+BuildRequires: (gtk4-tools or gtk4-devel-tools)
 BuildRequires: desktop-file-utils
 BuildRequires: meson
 BuildRequires: fdupes
