@@ -1,6 +1,6 @@
 Name:           varia
 Version:        2024.5.7
-Release:        1%{?autorelease}
+Release:        2%{?autorelease}
 Summary:        Download manager based on aria2
 License:        MPL-2.0
 Group:          System/GUI/GNOME
