@@ -9,7 +9,13 @@ Url:            https://giantpinkrobots.github.io/varia
 Source0:        %{name}-%{version}.tar.gz
 BuildArch: noarch
 
-%define typelib() (typelib(%1) = %2 or %{_libdir}/girepository-1.0/%1-%2.typelib)
+%if 0%{?suse_version}
+%define typelib() typelib(%1) = %2 
+%else
+%define typelib() %{_libdir}/girepository-1.0/%1-%2.typelib
+%endif
+
+
 
 BuildRequires: (gtk4-tools or gtk4-devel-tools)
 BuildRequires: desktop-file-utils
